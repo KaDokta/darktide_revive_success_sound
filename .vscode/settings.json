@@ -1,0 +1,4 @@
+{
+    "Lua.diagnostics.globals": ["Managers", "get_mod", "CLASS"],
+    "cSpell.words": ["Darktide", "fassert", "Interactee", "interactor", "minigame", "rawget", "togglable", "wwise"]
+}
