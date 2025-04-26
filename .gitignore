@@ -1,3 +1,5 @@
+*.png
+
 # Compiled Lua sources
 luac.out
 
