@@ -1,9 +1,10 @@
 local mod = get_mod("ReviveSuccessSound")
-mod.version = "1.0.0"
+mod.version = "1.1.0"
 
 local InteractionSettings = mod:original_require("scripts/settings/interaction/interaction_settings")
 local interaction_results = InteractionSettings.results
 local debug = mod:get("enable_debug_mode")
+local sound = mod:get("completion_sound")
 
 mod:info("Loaded mod with version " .. mod.version .. ", debug: " .. tostring(debug))
 
@@ -27,7 +28,7 @@ local function play_sound_on_revive(instance, result)
         if debug then
             mod:info("Playing sound...")
         end
-        Managers.ui:play_2d_sound("wwise/events/player/play_device_auspex_scanner_minigame_progress_last")
+        Managers.ui:play_2d_sound(sound)
     end
 end
 
@@ -38,5 +39,6 @@ end)
 
 mod.on_setting_changed = function()
     debug = mod:get("enable_debug_mode")
+    sound = mod:get("completion_sound")
     mod:info("ReviveSuccessSound (" .. mod.version .. ") reloaded.")
 end

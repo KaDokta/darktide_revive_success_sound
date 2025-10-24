@@ -11,6 +11,18 @@ local localizations = {
     enable_debug_mode_description = {
         en = "Enables more logging",
     },
+    completion_sound = {
+        en = "Completion Sound"
+    },
+    option_one_minigame_progress_last = {
+        en = "Auspex Scanner Minigame 1"
+    },
+    option_two_minigame_sinus = {
+        en = "Auspex Scanner Minigame 2"
+    },
+    option_three_servo_skull = {
+        en = "Servo Skull Deploy"
+    }
 }
 
 return localizations
